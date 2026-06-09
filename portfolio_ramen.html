@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        ::selection {
+            background-color: #21262d;
+            color: #c9d1d9;
+        }
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg) }
+            20% { transform: rotate(14deg) }
+            40% { transform: rotate(-4deg) }
+            60% { transform: rotate(10deg) }
+            80% { transform: rotate(-2deg) }
+        }
+        .animate-wave {
+            animation: wave 2.5s infinite;
+            transform-origin: 70% 70%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-[#0d1117] text-[#c9d1d9] antialiased min-h-screen selection:bg-gray-800">
+
+    <nav class="border-b border-[#21262d] bg-[#161b22]/60 backdrop-blur-md sticky top-0 z-50 w-full px-6 py-4">
+        <div class="max-w-2xl mx-auto flex items-center justify-between">
+            <span class="font-mono text-xs text-[#8b949e] uppercase tracking-wider">~/portfolio</span>
+            <div class="flex items-center gap-4 text-xs font-mono">
+                <a href="https://github.com/imramen07" target="_blank" rel="noopener noreferrer" class="text-[#8b949e] hover:text-[#58a6ff] transition-colors flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    GitHub
+                </a>
+                <span class="text-[#30363d]">|</span>
+                <a href="mailto:chramen07@gmail.com" class="text-[#8b949e] hover:text-[#58a6ff] transition-colors">Email</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-2xl mx-auto px-6 py-12 md:py-20 space-y-12">
+        
+        <header class="space-y-3">
+            <h1 class="text-3xl font-semibold text-[#f0f6fc] tracking-tight">
+                Ramen <span class="animate-wave text-2xl select-none">👋</span>
+            </h1>
+            <p class="text-md text-[#8b949e] leading-relaxed max-w-xl">
+                Computer Engineering Student focusing on modular backend engineering, optimized search architectures, and dense-sparse hybrid Retrieval-Augmented Generation (RAG) pipelines.
+            </p>
+        </header>
+
+        <hr class="border-[#21262d]">
+
+        <section class="space-y-6">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-[#8b949e]">Core Focus</h2>
+            <div class="grid gap-6 sm:grid-cols-2">
+                <div class="bg-[#161b22]/30 border border-[#21262d] p-4 rounded-lg">
+                    <h3 class="text-sm font-medium text-[#f0f6fc] mb-1">Search & Retrieval</h3>
+                    <p class="text-xs text-[#8b949e] leading-relaxed">
+                        Hybrid lexical-semantic architectures using FAISS dense vector spaces, BM25 token matching, and downstream Cross-Encoder rerankers.
+                    </p>
+                </div>
+                <div class="bg-[#161b22]/30 border border-[#21262d] p-4 rounded-lg">
+                    <h3 class="text-sm font-medium text-[#f0f6fc] mb-1">Backend Infrastructure</h3>
+                    <p class="text-xs text-[#8b949e] leading-relaxed">
+                        Predictable asynchronous REST API designs via FastAPI. Strict relational mapping layers and cascading logic engineered with SQLAlchemy.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-[#21262d]">
+
+        <section class="space-y-8">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-[#8b949e]">Selected Architectures</h2>
+
+            <div class="space-y-3">
+                <div class="flex items-baseline justify-between">
+                    <h3 class="text-md font-medium text-[#f0f6fc]">
+                        <a href="https://github.com/imramen07/ScholiaX" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-1 group">
+                            ScholiaX
+                            <span class="text-xs text-[#58a6ff] opacity-50 group-hover:opacity-100 transition-opacity">&rarr;</span>
+                        </a>
+                    </h3>
+                </div>
+                <p class="text-sm text-[#8b949e] leading-relaxed">
+                    OCR-optimized RAG infrastructure designed around isolated application contexts to guarantee deterministic document parsing and token retrieval passes.
+                </p>
+                <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                    <span class="bg-[#161b22] border border-[#30363d] px-2 py-0.5 rounded text-[#ff7b72]">Python</span>
+                    <span class="bg-[#161b22] border border-[#30363d] px-2 py-0.5 rounded text-[#79c0ff]">FAISS</span>
+                    <span class="bg-[#161b22] border border-[#30363d] px-2 py-0.5 rounded text-[#79c0ff]">BM25</span>
+                    <span class="bg-[#161b22] border border-[#30363d] px-2 py-0.5 rounded text-[#d2a8ff]">PyTorch</span>
+                    <span class="bg-[#161b22] border border-[#30363d] px-2 py-0.5 rounded text-[#d2a8ff]">Transformers</span>
+                </div>
+            </div>
+
+            <div class="space-y-3">
+                <div class="flex items-baseline justify-between">
+                    <h3 class="text-md font-medium text-[#f0f6fc]">
+                        <a href="https://github.com/imramen07/BillMe" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-1 group">
+                            BillMe
+                            <span class="text-xs text-[#58a6ff] opacity-50 group-hover:opacity-100 transition-opacity">&rarr;</span>
+                        </a>
+                    </h3>
+                </div>
+                <p class="text-sm text-[#8b949e] leading-relaxed">
+                    Dynamic transactional billing engine implementing zero third-party UI structural constraints for lean, low-latency relational data mappings.
+                </p>
+                <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                    <span class="bg-[#161b22] border border-[#30363d] px-2 py-0.5 rounded text-[#ff7b72]">Python</span>
+                    <span class="bg-[#161b22] border border-[#30363d] px-2 py-0.5 rounded text-[#7ee787]">FastAPI</span>
+                    <span class="bg-[#161b22] border border-[#30363d] px-2 py-0.5 rounded text-[#7ee787]">SQLAlchemy</span>
+                    <span class="bg-[#161b22] border border-[#30363d] px-2 py-0.5 rounded text-[#a5d6ff]">SQLite</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-[#21262d]">
+
+        <section class="space-y-3">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-[#8b949e]">Education</h2>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                <div>
+                    <h3 class="text-sm font-medium text-[#f0f6fc]">Bachelor of Engineering — Computer Engineering</h3>
+                    <p class="text-xs text-[#8b949e]">Gujarat Technological University</p>
+                </div>
+                <span class="text-xs font-mono text-[#8b949e]">2025 — 2029</span>
+            </div>
+        </section>
+
+        <footer class="text-center pt-8 border-t border-[#21262d]/40">
+            <p class="text-[10px] font-mono text-[#8b949e] tracking-widest uppercase">
+                Minimalist Engineering Stack Grid
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
